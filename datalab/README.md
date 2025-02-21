@@ -13,11 +13,9 @@
 
 In this lab, you will perform data transformations using PySpark and validate these transformations using PyTest. You will also adapt the transformations to a Medallion data architecture. The goal is to understand the process of data transformation and testing, and to adapt the transformations to fit a specific data architecture. The entire lab will be done using GitHub Copilot, and you will use different prompts created by the user to guide the process.
 
-## Situation
-
-You have been provided with a dataset named `2021.csv` by the financial team without any information, headers, etc. in the dataset. Your task is to perform various data transformations on this dataset to make it business-valid, and to validate the data transformations. In addition, you will adapt the transformations to a Medallion data architecture.
-
 ## Lab 1 - Data Transformation and Testing
+
+You have been provided with a dataset named `2021.csv` by the financial team without any information, headers, etc. in the dataset. Your task is to perform various data transformations on this dataset to make it business-valid, and to validate the data transformations. 
 
 ### Data Transformation
 
@@ -39,6 +37,10 @@ You have been provided with a dataset named `2021.csv` by the financial team wit
 3. Run the Jupyter Notebook.
 
 ## Lab 2 - Medallion Workflow
+
+It seems that our manager was happy with the code used, but it does not fit with the data transformation architecture used by the company, which is Medallion. We are going to use Github Copilot to fix that!
+
+To adapt the transformations to a Medallion data transformation architecture, use Github Copilot to refactor the code.
 
 ### Adapt to Medallion Architecture
 
