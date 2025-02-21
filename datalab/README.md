@@ -30,7 +30,7 @@ You have been provided with a dataset named `2021.csv` by the financial team wit
 1. Use Github Copilot to create PyTest code and validate previously performed data transformations.
 2. Ensure the transformed dataset meets the expected criteria and check the new dataset file created.
 
-**Fix and mitigate the different bugs you have using Github Copilot!**
+**Fix and mitigate the different code issues you have using Github Copilot!**
 
 ### Jupyter Notebook Creation
 
