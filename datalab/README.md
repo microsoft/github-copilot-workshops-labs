@@ -5,9 +5,8 @@
 - [Visual Studio Code](https://code.visualstudio.com/) or any other editor that supports GitHub Copilot.
 - [GitHub Copilot](https://copilot.github.com/) extensions installed.
 - [Java SDK v21](https://www.oracle.com/java/technologies/downloads/archive/) 
-- [PySpark](https://spark.apache.org/docs/latest/api/python/getting_started/install.html) or use 'pip install pyspark'. 
+- [Spark Hadoop](https://spark.apache.org/docs/latest/api/python/getting_started/install.html) or use 'pip install pyspark'. 
 - [PyTest](https://pypi.org/project/pytest/) or install using 'pip install pytest'.
-- [Hadoop](https://hadoop.apache.org/)
 - [Jupyter Notebook Extension](https://code.visualstudio.com/docs/datascience/jupyter-notebooks)
 
 ## Lab Overview
@@ -45,6 +44,7 @@ You have been provided with a dataset named `2021.csv` by the financial team wit
 
 1. Adapt the transformations to a Medallion data architecture using Github Copilot.
 2. Separate the transformations into Bronze, Silver, and Gold layers.
+3. If Hadoop is available, use **parquet files** in silver and gold layer datasets.
 
 ### Split Transformation Code
 
