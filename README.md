@@ -1,14 +1,15 @@
-# Project
+# GitHub Copilot Workshops Labs
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+## About This Repository
 
-As the maintainer of this project, please make a few updates:
+This repository contains all the practical labs for GitHub Copilot workshops. It includes various workshops organized into folders, each categorized by language or use case. These materials are designed to help users effectively learn and demonstrate the capabilities of GitHub Copilot.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Workshops Structure
+
+- **Use Cases**: Workshops are also organized by different use cases, providing practical scenarios where GitHub Copilot can be utilized (ex. Testing, Debugging, etc.).
+  - **Languages**: Each folder within the Use Case folder is dedicated to a specific programming language, containing relevant examples and exercises.
+
+Feel free to explore the folders and use the materials to enhance your workshops.
 
 ## Contributing
 
