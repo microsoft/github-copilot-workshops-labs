@@ -68,24 +68,7 @@ In this challenge, you will create unit tests for the API. You will need to crea
 
     Also, integrate your IDE with SonarQube and improve your code quality with the help of GitHub Copilot.
 
-    NOTE: You will need to have a SonarQube instance running to complete this challenge. 
-    For the shake of simplicity, you can use a local instance running with Docker. Instructions:
-
-    - Install sonarqube extension
-    - Run sonarqube server
-    ```bash
-    docker run --name sonarqube-custom -p 9000:9000 sonarqube:10.6-community
-    ```	
-    - Configure extension to point to http://localhost:9000 and create a token
-    - Create project in sonarqube, get a new token and run analysis
-    ```bash
-    SONAR_TOKEN=sqp_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    mvn clean verify sonar:sonar \
-    -Dsonar.projectKey=demo \
-    -Dsonar.projectName='demo' \
-    -Dsonar.host.url=http://localhost:9000 \
-    -Dsonar.token=$SONAR_TOKEN
-    ```
+NOTE: Detailed instructions on how to integrate your IDE with SonarQube are available in the [SONAR.md](SONAR.md) file.
 
 ### Performance testing
 

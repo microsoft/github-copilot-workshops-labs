@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "-https-07ec-94-73-36-59-ngrok-free-app",
+        "projectKey": "demo"
+    }
+}
