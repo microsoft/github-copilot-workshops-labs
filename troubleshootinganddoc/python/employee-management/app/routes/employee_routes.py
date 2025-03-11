@@ -30,7 +30,7 @@ def get_employee_by_id(employee_id):
     else:
         return jsonify({'error': 'Employee not found'}), 404
 
-@employee_routes.route('/employees/email/<string:email>', methods=['GET'])
+@employee_routes.route('/employees/<string:email>', methods=['GET'])
 def get_employee_by_email(email):
     employee = controller.get_employee_by_email(email)
     if employee:

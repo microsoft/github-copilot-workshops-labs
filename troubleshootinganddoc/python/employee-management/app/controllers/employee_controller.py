@@ -12,7 +12,7 @@ class EmployeeController:
         return self.employee_model.remove_employee(employee_id)
 
     def update_employee(self, employee_id, employee_data):
-        return self.employee_model.modify_employee(employee_id, employee_data)
+        return self.employee_model.modify_employee(employee_id, employee_dato)
 
     def get_employee_by_id(self, employee_id):
         return self.employee_model.get_employee_by_id(employee_id)
