@@ -6,8 +6,9 @@ This repository contains a collection of challenges to improve your skills with 
 
 - [Visual Studio Code](https://code.visualstudio.com/) or any other editor that supports GitHub Copilot.
 - [GitHub Copilot](https://copilot.github.com/) extensions installed.
-- Java 17 or higher
-- Maven
+- Python 3.8 or higher
+- Pytest
+- Flask
 
 ## Getting started
 
