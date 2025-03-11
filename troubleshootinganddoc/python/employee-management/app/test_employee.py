@@ -74,3 +74,12 @@ def test_update_employee_Failure():
     assert modified_employee is None
     assert len(Employee.employees) == 1
     assert Employee.employees[0].to_dict() == {'id': 1, 'name': 'John Doe', 'position': 'Developer', 'department': 'Engineering'}
+
+def test_get_employee_by_email():
+    employee_data = {'id': 1, 'name': 'John Doe', 'position': 'Developer', 'department': 'Engineering', 'email': 'john.doe@example.com'}
+    Employee.create_employee(employee_data)
+    employee = Employee.get_employee_by_email('john.doe@example.com')
+    assert employee == employee_data
+
+    non_existent_employee = Employee.get_employee_by_email('jane.doe@example.com')
+    assert non_existent_employee is None

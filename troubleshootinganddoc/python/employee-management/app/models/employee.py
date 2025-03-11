@@ -43,3 +43,10 @@ class Employee:
             if employee.id == employee_id:
                 return employee.to_dict()
         return None
+
+    @classmethod
+    def get_employee_by_email(cls, email):
+        for employee in cls.employees:
+            if employee.email == email:
+                return employee.to_dict()
+        return None

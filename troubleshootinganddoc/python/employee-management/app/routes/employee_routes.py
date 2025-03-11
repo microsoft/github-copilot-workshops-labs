@@ -30,6 +30,14 @@ def get_employee_by_id(employee_id):
     else:
         return jsonify({'error': 'Employee not found'}), 404
 
+@employee_routes.route('/employees/email/<string:email>', methods=['GET'])
+def get_employee_by_email(email):
+    employee = controller.get_employee_by_email(email)
+    if employee:
+        return jsonify(employee), 200
+    else:
+        return jsonify({'error': 'Employee not found'}), 404
+
 @employee_routes.route('/employes/<int:employee_id>', methods=['PUT'])
 def update_employee(employee_id):
     data = request.json

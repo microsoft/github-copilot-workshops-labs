@@ -16,3 +16,6 @@ class EmployeeController:
 
     def get_employee_by_id(self, employee_id):
         return self.employee_model.get_employee_by_id(employee_id)
+
+    def get_employee_by_email(self, email):
+        return self.employee_model.get_employee_by_email(email)
