@@ -36,3 +36,10 @@ class Employee:
                 employee.department = employee_data.get('department', employee.department)
                 return employee.to_dict()
         return None
+
+    @classmethod
+    def get_employee_by_id(cls, employee_id):
+        for employee in cls.employees:
+            if employee.id == employee_id:
+                return employee.to_dict()
+        return None

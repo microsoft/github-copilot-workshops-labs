@@ -22,6 +22,14 @@ def delete_employee(employee_id):
     controller.delete_employee(employee_id)
     return '', 204
 
+@employee_routes.route('/employees/<int:employee_id>', methods=['GET'])
+def get_employee_by_id(employee_id):
+    employee = controller.get_employee_by_id(employee_id)
+    if employee:
+        return jsonify(employee), 200
+    else:
+        return jsonify({'error': 'Employee not found'}), 404
+
 @employee_routes.route('/employes/<int:employee_id>', methods=['PUT'])
 def update_employee(employee_id):
     data = request.json
