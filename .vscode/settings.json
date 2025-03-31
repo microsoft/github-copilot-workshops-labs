@@ -2,5 +2,11 @@
     "sonarlint.connectedMode.project": {
         "connectionId": "-https-07ec-94-73-36-59-ngrok-free-app",
         "projectKey": "demo"
-    }
+    },
+    "python.testing.pytestArgs": [
+        "troubleshootinganddoc"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
