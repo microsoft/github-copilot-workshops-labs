@@ -6,7 +6,7 @@ Usaremos github copilot para ayudarnos a completar el código.
 
 **Instrucciones**:
 1. Crea un nuevo proyecto Java en tu IDE favorito.
-2. A través del READMEFUNC.md pide a copilot que genere el scaffolding del proyecto.
+2. A través del READMEFUNC.md pide a copilot que genere el scaffolding del proyecto. Usa copilot-instructions.md para añadir contexto extra. y así poderlo adaptar a tu arquitectura.
 3. Compila el código generado por copilot y asegúrate de que no hay errores. ./mvnw spring-boot:run
 
 ### Ejercicio 1: Refactorización de Métodos
