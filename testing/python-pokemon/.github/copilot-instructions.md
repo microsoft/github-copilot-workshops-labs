@@ -1,0 +1,1 @@
+It is an Pokemon App built using Python and Fast API. It provides a simple API to manage pokemon routes, allowing for operations such as getting, adding, deleting, updating pokemon information.
