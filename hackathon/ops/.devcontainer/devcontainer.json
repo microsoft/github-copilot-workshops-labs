@@ -1,0 +1,22 @@
+{
+	"name": "Operations - Terraform",
+	"features": {
+	     "ghcr.io/devcontainers/features/azure-cli:1": {},
+	     "ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {}
+	},
+	"customizations": {
+	   "vscode": {
+	      "settings": {
+		      "extensions.showRecommendationsOnlyOnDemand": true,
+		      "extensions.ignoreRecommendations": true
+	      },
+	      "extensions": [
+		      "GitHub.copilot",
+		      "GitHub.copilot-chat",
+		      "hashicorp.terraform",
+          	      "ms-azuretools.vscode-azureterraform",
+		      "ms-vscode.vscode-node-azure-pack"
+	      ]
+	    }
+	}
+}

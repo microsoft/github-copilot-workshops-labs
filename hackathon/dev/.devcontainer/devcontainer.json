@@ -1,0 +1,44 @@
+ {
+	"name": "Developers - SDKs and MS SQL",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"customizations": {
+		"vscode": {
+			"settings": { 
+				"extensions.showRecommendationsOnlyOnDemand": true,
+				"extensions.ignoreRecommendations": true,
+				"mssql.connections": [
+					{
+						"server": "localhost,1433",
+						"database": "",
+						"authenticationType": "SqlLogin",
+						"user": "sa",
+						"password": "Passw0rd",
+						"emptyPasswordInput": false,
+						"savePassword": true,
+						"profileName": "mssql-container",
+						"trustServerCertificate": true
+					}
+				]			
+			},
+			"extensions": [
+				"ms-dotnettools.csharp",
+				"ms-mssql.mssql",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	},
+	"onCreateCommand": "dotnet tool install --global dotnet-ef --version 8.0.4",
+	"postAttachCommand":"mkdir -p ~/.sqlsecrets && echo \"{\\\"credentials\\\":[{\\\"credentialId\\\":\\\"Microsoft.SqlTools|itemtype:Profile|server:localhost|user:sa\\\",\\\"password\\\":\\\"Passw0rd\\\"}]}\" > ~/.sqlsecrets/sqlsecrets.json",
+	"remoteEnv": {
+		"ASPNETCORE_Kestrel__Certificates__Default__Password": "devcertpwd",
+		"ASPNETCORE_Kestrel__Certificates__Default__Path": "/workspaces/gh-hackathon-dev/devcertificate.pfx",
+		"ASPNETCORE_URLS": "http://*:5001,https://*:7001"
+	},
+	"portsAttributes": {
+		"7000-7300": {
+			"protocol": "https"
+		}
+	}
+}
